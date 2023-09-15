@@ -3,6 +3,7 @@
     "development"
   ],
   "hints": {
-    "axe/name-role-value": "off"
+    "axe/name-role-value": "off",
+    "typescript-config/consistent-casing": "off"
   }
 }
