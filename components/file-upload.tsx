@@ -13,7 +13,7 @@ interface FileUploadProps {
   endpoint: "messageFile" | "serverImage"
 }
 
-export const FileUpload = ({
+ const FileUpload = ({
   onChange,
   value,
   endpoint
@@ -75,3 +75,5 @@ export const FileUpload = ({
     />
   )
 }
+
+export default FileUpload;
