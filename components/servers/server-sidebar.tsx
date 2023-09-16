@@ -3,9 +3,9 @@ import { db } from "@/lib/db"
 import { ChannelType, MemberRole } from "@prisma/client"
 import { redirect } from "next/navigation"
 import ServerHeader from "./server-header"
-import { ScrollArea } from "@radix-ui/react-scroll-area"
 import { Hash, Mic, ShieldCheckIcon, Video } from "lucide-react"
 import ServerSearch from "./server-search"
+import { ScrollArea } from "../ui/scroll-area"
 
 interface ServerSidebarProps {
     serverId: string
