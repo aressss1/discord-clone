@@ -1,11 +1,26 @@
 import { currentProfile } from "@/lib/current-profile"
 import { db } from "@/lib/db"
-import { ChannelType } from "@prisma/client"
+import { ChannelType, MemberRole } from "@prisma/client"
 import { redirect } from "next/navigation"
 import ServerHeader from "./server-header"
+import { ScrollArea } from "@radix-ui/react-scroll-area"
+import { Hash, Mic, ShieldCheckIcon, Video } from "lucide-react"
+import ServerSearch from "./server-search"
 
 interface ServerSidebarProps {
     serverId: string
+}
+
+const iconMap  = {
+    [ChannelType.TEXT]: <Hash className="mr-2 h-4 w-4" />,
+    [ChannelType.AUDIO]: <Mic className="mr-2 h-4 w-4" />,
+    [ChannelType.VIDEO]: <Video className="mr-2 h-4 w-4" />,
+}
+
+const roleIconMap = {
+    [MemberRole.GUEST]: null,
+    [MemberRole.MODERATOR]: <ShieldCheckIcon className="h-4 w-4 m4-2 text-indigo-500 " />,
+    [MemberRole.ADMIN]: <ShieldCheckIcon className="h-4 w-4 m4-2 text-rose-500 " />
 }
 
 const ServerSidebar = async ({ serverId }: ServerSidebarProps) => {
@@ -53,6 +68,50 @@ const ServerSidebar = async ({ serverId }: ServerSidebarProps) => {
         server={server}
         role={role}
       />
+      <ScrollArea className="flex-1 px-3 " >
+            <div className="mt-2" >
+                <ServerSearch 
+                    data={[
+                        {
+                            label: "Text Channels",
+                            type: "channel",
+                            data: textChannels?.map((channel) => ({
+                                id: channel.id,
+                                name: channel.name,
+                                icon: iconMap[channel.type]
+                            }))
+                        },
+                        {
+                            label: "Voice Channels",
+                            type: "channel",
+                            data: audioChannels?.map((channel) => ({
+                                id: channel.id,
+                                name: channel.name,
+                                icon: iconMap[channel.type]
+                            }))
+                        },
+                        {
+                            label: "Video Channels",
+                            type: "channel",
+                            data: videoChannels?.map((channel) => ({
+                                id: channel.id,
+                                name: channel.name,
+                                icon: iconMap[channel.type]
+                            }))
+                        },
+                        {
+                            label: "Members",
+                            type: "member",
+                            data: members?.map((member) => ({
+                                id: member.id,
+                                name: member.profile.name,
+                                icon: roleIconMap[member.role]
+                            }))
+                        },
+                    ]}
+                />
+            </div>
+      </ScrollArea>
     </div>
   )
 }
