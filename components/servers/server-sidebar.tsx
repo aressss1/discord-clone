@@ -177,7 +177,7 @@ const ServerSidebar = async ({ serverId }: ServerSidebarProps) => {
                     </div>
                 )}
                 {!!members?.length && (
-                    <div className="mb-2" >
+                    <div className="mb-2">
                         <ServerSection
                             sectionType="members"
                             role={role}
