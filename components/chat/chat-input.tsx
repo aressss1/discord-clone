@@ -90,7 +90,6 @@ const ChatInput = ({
                     <EmojiPicker
                       onChange={(emoji: string) => field.onChange(`${field.value} ${emoji}`)}
                     />
-                    <SmilePlus />
                   </div>
                 </div>
               </FormControl>
