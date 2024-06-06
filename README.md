@@ -23,18 +23,16 @@ Features:
 - Authentication with Clerk
 
 ### Preview
-![Screenshot (237)](https://github.com/aressss1/discord-clone/assets/127649710/bc2f4110-cd65-4535-8ac4-4adad2cdf267)
-![Screenshot (238)](https://github.com/aressss1/discord-clone/assets/127649710/15d3507e-9291-4be9-8f2b-210d90ff5e2e)
-![Screenshot (239)](https://github.com/aressss1/discord-clone/assets/127649710/e8a04269-7183-42ff-8f55-6d1f6acd5f64)
-![Screenshot (240)](https://github.com/aressss1/discord-clone/assets/127649710/b0293da3-3880-40e4-9b1e-d26a6caddabc)
-![Screenshot (241)](https://github.com/aressss1/discord-clone/assets/127649710/1fa89573-daf0-4be1-b793-47562de670f6)
-![Screenshot (242)](https://github.com/aressss1/discord-clone/assets/127649710/5aed64b7-3122-4ecc-9226-cbaec3637bb8)
-![Screenshot (243)](https://github.com/aressss1/discord-clone/assets/127649710/a71c27da-9e7b-42ab-98d2-25f17f49e503)
-![Screenshot (244)](https://github.com/aressss1/discord-clone/assets/127649710/3a8f3dec-086e-41c7-9184-817996716e52)
-![Screenshot (245)](https://github.com/aressss1/discord-clone/assets/127649710/d2c960b6-0a37-4a0c-a365-0a41bf9218ce)
-![Screenshot (246)](https://github.com/aressss1/discord-clone/assets/127649710/1689a384-8fdc-4016-a171-43595be2d333)
-![Screenshot (247)](https://github.com/aressss1/discord-clone/assets/127649710/1b813c0f-add3-489c-a4c4-62f7d156ec69)
-![Screenshot (248)](https://github.com/aressss1/discord-clone/assets/127649710/3f5f4d84-7c1e-49dd-ab72-dd5aa8301f7c)
+
+![prismify-render-1716880584388](https://github.com/aressss1/discord-clone/assets/127649710/4693d37d-c063-43b9-a6b1-ccefd02f6453)
+![prismify-render-1716880568157](https://github.com/aressss1/discord-clone/assets/127649710/861664fe-d92c-4323-9527-b97289f127e1)
+![prismify-render-1716880550775](https://github.com/aressss1/discord-clone/assets/127649710/5e6e8ab4-b55a-457c-92fc-4930372a91a8)
+![prismify-render-1716880534904](https://github.com/aressss1/discord-clone/assets/127649710/e798ef5c-7e4d-44ce-a80e-417faf692546)
+![prismify-render-1716880485234](https://github.com/aressss1/discord-clone/assets/127649710/fecd0282-e685-46ff-803a-788f1de75b85)
+![prismify-render-1716880632044](https://github.com/aressss1/discord-clone/assets/127649710/17af9ccb-3e6f-4591-a23d-945112dd3290)
+![prismify-render-1716880617105](https://github.com/aressss1/discord-clone/assets/127649710/7298d981-20a4-4b0e-834f-3fed74f92877)
+![prismify-render-1716880601603](https://github.com/aressss1/discord-clone/assets/127649710/3df251a6-b807-4f76-bdae-1bd47053c308)
+
 
 
 ### Prerequisites
